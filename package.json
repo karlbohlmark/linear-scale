@@ -1,0 +1,12 @@
+{
+  "name": "linear-scale",
+  "version": "0.0.0",
+  "description": "Linear scale",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
