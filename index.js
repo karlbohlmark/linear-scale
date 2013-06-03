@@ -41,3 +41,9 @@ Scale.prototype.invert = function (y) {
 	var factor = (range[1] - range[0]) / (domain[1] - domain[0])
 	return domain[0] + (y - range[0]) / factor
 };
+
+Scale.prototype.scale = function (factor) {
+	var range = this._range
+	this.range([range[0] * factor, range[1] * factor])
+	return this
+}
