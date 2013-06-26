@@ -11,6 +11,7 @@ Scale.prototype.range = function (range) {
 	}
 
 	this._range = range;
+	return this;
 };
 
 Scale.prototype.domain = function (domain) {
@@ -19,6 +20,7 @@ Scale.prototype.domain = function (domain) {
 	}
 
 	this._domain = domain;
+	return this;
 };
 
 Scale.prototype.map = function (x) {
