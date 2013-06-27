@@ -1,4 +1,4 @@
-var assert = require('assert')
+var assert = require('better-assert')
 
 var Scale = require('./')
 
@@ -10,5 +10,8 @@ scale = new Scale([10, 20], [5, 10])
 assert(scale.map(12) == 6)
 assert(scale.invert(6) == 12)
 
-scale.scale(2)
-assert(scale.map(12) == 12)
+scale.scaleDomain(2)
+assert(scale.invert(6) == 24)
+
+scale.scaleRange(2)
+assert(scale.invert(6) == 12)
